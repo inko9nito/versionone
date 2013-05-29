@@ -1,0 +1,726 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("www12.v1host.com") {
+
+    html, body, input, textarea, select option, h1, h2, h3,
+    .header span, .header a {
+        font-family: "Helvetica", Arial !important;
+    }
+
+    
+    select option {
+        padding: 10px;
+    }
+    
+    form.convo-form textarea {
+        height: 100px !important;
+        line-height: 135%;
+        padding: 10px;
+    }
+    
+
+    /* Truncate long nicknames in team directory */
+    
+    
+    div.teamroom > div.header .persona-filters .owner-list ul li .name {
+        overflow-x: hidden;
+        width: 37px;
+    }
+    
+    
+    /******* Format work items to look like cards *******/
+    div.window ol li.workitem,
+    .asset-link a.open-by-name[data-assettype="Story"],
+    .asset-link a.open-by-name[data-assettype="Defect"] {
+        background: -moz-linear-gradient(center top , #FFFFFF, #DEDEDE) no-repeat scroll 0 0 transparent;
+        border: 1px solid #CCCCCC !important;
+        border-radius: 4px;
+        font-size: 13px;
+        line-height: 135% !important;
+        margin-bottom: 10px !important;
+        padding: 5px !important;
+    }
+
+    
+    .board .story-card .number {
+        font-weight: bold;
+    }
+    
+    .board .story-card.story,
+    .board .story-card.defect,
+    .board .task-card {
+        border-radius: 5px;
+    }
+    
+    .board .identity {
+         margin-bottom: 7px !important;
+    }
+    
+    .board .status {
+        margin-bottom: 10px !important;
+    }
+    
+    
+    /* Story / Defect cards */
+    .board .story-card .identity { 
+        border-radius: 3px;
+    }
+    
+    .board .story-card a.story-card-actions {
+        margin-right: 5px;
+        margin-top: 12px;
+    }
+    
+    /* points */
+    .board .story-card .right-bottom-content {
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 3px 3px 3px 3px;
+        display: inline-block;
+        float: right;
+        font-weight: bold;
+        padding: 2px 7px !important;
+        margin: 0 !important;
+        width: auto !important;
+    }
+    
+        .board .story-card .right-bottom-content:after {
+            content: " pts.";
+            display: inline-block;
+            font-size: 8px;
+            position: relative;
+        }
+               
+        td.value input.estimate:after {
+            background: green !important;
+            content: " pts.";
+            display: inline-block;
+            font-size: 8px;
+            height: 20px !important;
+            position: relative; 
+            width: 100px !important;
+        }
+    
+    .board .story-card.story,
+    .board .story-card.defect {        
+        box-shadow: none !important;
+        padding: 15px 5px 5px !important;
+    }
+    
+        .board .story-card.story .title a,
+        .board .story-card.defect .title a {
+            color: #555555 !important;
+        }
+        
+        .board .story-card.story .title a:hover,
+        .board .story-card.defect .title a:hover {
+            color: #333333 !important;
+            text-decoration: none !important;
+        }
+    
+    .board .story-card.story {
+        /*background: rgba(127, 178, 53, 0.15) !important;*/
+        background: #FFFFFF !important;
+        border: 2px solid rgba(127, 178, 53, 1) !important;
+    }
+    
+        .board .story-card.story:hover {
+            background: #E5F0D7 !important;
+            /*border-color: rgba(127, 178, 53, 0.90) !important;*/
+        }
+        
+        .board .story-card.story .right-bottom-content {
+            background-color: rgba(127, 178, 53, 0.25) !important;
+            color: #4F7F1E;
+        }
+        
+        .asset-info a.open-by-name[data-assettype="Story"],
+        a.asset-parent-link[data-assettype="Story"], 
+        .inline-asset-detail .asset-link a.open-by-name[data-assettype="Story"],
+        .DetailContent a.open-by-name[data-assettype="Story"] {
+            background: #E5F0D7 !important;
+            border: 2px solid rgba(127, 178, 53, 1) !important;
+        }
+    
+    .board .story-card.defect {
+        /*background: rgba(241, 222, 222, 0.70) !important;*/
+        background: #FFFFFF !important;
+        border: 2px solid rgba(159, 32, 31, 0.60) !important;
+    }
+    
+        .board .story-card.defect:hover {
+            background: #F4E5E5 !important;
+            /*border-color: rgba(159, 32, 31, 0.65) !important;*/
+        }
+        
+        .board .story-card.defect .right-bottom-content {
+            background-color: rgba(159, 32, 31, 0.15) !important;
+            color: rgba(159, 32, 31, 0.80);
+        }
+        
+        .asset-info a.open-by-name[data-assettype="Defect"],
+        a.asset-parent-link[data-assettype="Defect"], 
+        .inline-asset-detail .asset-link a.open-by-name[data-assettype="Defect"],
+        .DetailContent a.open-by-name[data-assettype="Defect"] {
+            background: #F4E5E5 !important;
+            border: 2px solid rgba(159, 32, 31, 0.60) !important;
+        }
+    
+    
+    /* Task Card */
+    
+    .board .task-card,
+    .DetailContent a.open-by-name[data-assettype="Task"] {
+        background: #F7F1DE !important;
+        border: 2px solid #E1BF5D !important;
+        box-shadow: none !important;
+        padding: 10px !important;
+    }
+      
+    .board .task-card span.todo {
+        background: rgba(225, 191, 93, 0.30) !important;
+        border-radius: 3px;
+        color: #7F6106 !important;
+        display: block;
+        font-weight: bold !important;
+        padding: 2px 7px !important;
+    }
+        
+        .board .task-card span.todo:after {
+            color: rgba(143, 115, 33, 0.70);
+            content: " hrs.";
+            display: inline-block;
+            font-size: 8px;
+            position: relative;
+        }
+        
+    /* Related Asset styling - when you add an attachment */
+    
+    .DetailContent a.open-by-name[data-assettype="Story"],
+    .DetailContent a.open-by-name[data-assettype="Defect"],
+    .DetailContent a.open-by-name[data-assettype="Task"] {
+        border-radius: 4px;
+        font-size: 12px !important;
+        font-weight: normal;
+        padding: 10px !important;
+        width: 35% !important;
+    }
+    
+    
+    
+
+
+    
+    
+    
+    
+    .board .task-card .title {
+        margin-bottom: 20px !important;
+    }
+    
+    .board .task-card .title a {
+        color: #4F3C04 !important
+    }
+        
+        .board .task-card .title a:hover {
+            color: #000000 !important;
+            text-decoration: none !important;
+        }
+
+        
+    
+    /* Edit issue */
+    
+    .DetailPageWrapper .t {
+        padding: 20px !important;
+    }
+    
+    table.DetailPageSection a.asset-number-link {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    table.DetailPageSection input.text.name {
+        width: 75%;
+    }
+    
+    table.DetailPageSection a.asset-parent-link,
+    .DetailContent a.open-by-name {
+        display: block;
+        float: left !important;
+        margin-right: 20px;
+        padding: 15px !important;
+        width: 70% !important;
+    }
+    
+    table.DetailPageSection .dropdown .dd-table {
+        width: 200px !important;
+    }
+    
+        table.DetailPageSection .dropdown .ddtext {
+            height: 20px;
+            padding-left: 15px !important;
+        }
+    
+    .DetailContent tr.item {
+        line-height: 135%;
+    }
+    
+    .DetailContent tr.item td {
+        padding: 10px 0 !important;
+    }
+    
+    .detail .pane input[type="text"]#CM_amed,
+    .DetailPageSection .Pane input[type="text"]#CM_amed,
+    .DetailContent input.text.name {
+        font-size: 18px !important;
+        padding: 15px 10px;
+    }
+    
+    .detail .pane textarea, 
+    .DetailPageSection .Pane textarea, 
+    .detail .pane input[type="text"], 
+    .DetailPageSection .Pane input[type="text"] {
+        padding: 10px;
+    }
+
+
+
+    /* Open Story */
+    
+    
+    .asset-summary .toolbar {
+        margin-left: -10px !important;
+    }
+    
+    .page-asset-detail .asset-summary .toolbar {
+        margin-top: -10px !important;
+    }
+    
+        .asset-summary.Story .toolbar {  
+            background: #E5F0D7 !important;        
+         }
+     
+        .asset-summary.Defect .toolbar {  
+            background: #F4E5E5 !important;
+        }
+        
+        .asset-summary.Task .toolbar {
+            background: rgba(243, 233, 198, 0.80) !important;
+        }
+        
+            
+        
+    
+    .asset-heading {
+        margin-bottom: 20px !important;
+        padding: 10px !important;
+    }    
+    
+    .asset-heading span.icon {
+        display: block;
+        margin: 0 10px 10px !important;
+    }
+      
+    .asset-summary .asset-heading h3 {
+        clear: both;
+        font-size: 20px !important;
+        font-weight: normal !important;
+        line-height: 150%;
+        margin-top: 20px !important;
+        padding-left: 60px !important;
+    }
+
+    .asset-summary .asset-heading h4 {
+        font-family: Helvetica !important;
+        font-size: 20px !important;
+        font-weight: bold !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+        padding-left: 60px !important;
+    }
+    
+    
+    .asset-info a[data-assettype="Timebox"] {
+        background-position: 0 2px !important;
+        background-repeat: no-repeat !important;
+        background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/icons/Iteration-Icon.gif") !important;
+        padding: 5px 0 5px 30px !important;
+    }
+    
+    
+    /* Badges 
+    
+    .relation-links ul {
+        text-align: left !important;
+    }
+    
+        .relation-links ul li {
+            background: #EFEFEF;
+            border: 1px solid #DFDFDF !important;
+            border-radius: 4px;
+            color: #333333;
+            float: left;
+            font-size: 20px;
+            font-weight: bold;
+            height: 60px;
+            letter-spacing: 4px;
+            margin-right: 10px;
+            padding: 10px !important;
+            position: relative;
+            text-align: center;
+            width: 10%;
+        }
+        
+            .relation-links ul li a {
+                color: #666666 !important;
+                display: block;
+                font-size: 10px;
+                font-weight: bold;
+                letter-spacing: normal;
+                margin-bottom: 20px;
+                margin-right: 10px !important;
+                text-transform: uppercase;
+            }
+            
+            .relation-links ul li .count {
+                color: #666666 !important;
+                display: inline-block;
+                font-weight: bold;
+            }
+        
+        
+        
+        .scroll-view,
+        .asset-summary-page .asset-info {
+            clear: both !important;
+            margin-top: 100px !important;
+        }
+        
+        */
+    
+    /* Conversation / Comment styling */
+    .asset-summary .conversations .conversations-stream > li.topic .details .content {
+        line-height: 150% !important;
+        margin: 15px 0 10px 30px !important;
+    }
+    
+    
+    /************ Priorities ************/
+    
+    .board .card-color {
+        border-radius: 0 0 3px 3px !important;
+        bottom: auto !important;
+        height: 14px !important;
+        left: 8px !important;
+        position: absolute;
+        top: 0 !important;
+        width: 60px !important;
+    }
+    
+    .board .card-color:before {
+        color: #FFFFFF;
+        display: inline-block;
+        font-size: 9px;
+        font-weight: bold;
+        left: 10px;
+        position: relative;
+        top: -2px;
+    }
+    
+    /* Critical */
+    .board .card-color.c4 {
+        background-color: #CB4D4D !important;
+    }
+        .board .card-color.c4:before {
+            content: "CRITICAL";
+            left: 9px;
+        }
+    
+    /* High */
+    .board .card-color.c3 {
+        background-color: #FF8033 !important;
+    }
+        .board .card-color.c3:before {
+            content: "HIGH";
+            left: 17px;
+        }
+    
+    /* Medium */
+    .board .card-color.c2 {
+        background-color: #2A8CC9 !important;
+    }
+        .board .card-color.c2:before {
+            content: "MEDIUM";
+            left: 10px;
+        }
+    
+    /* Low */
+    .board .card-color.c1 {
+        background-color: #57A314 !important;
+    }
+        .board .card-color.c1:before {
+            content: "LOW";
+            left: 19px;
+        }
+    
+    /* Blocker */
+    .board .card-color.c5 {
+        background-color: #CC000F !important;
+    }
+        .board .card-color.c5:before {
+            content: "BLOCKER";
+            left: 8px;
+        }
+    
+    
+
+    /********** Teams **********/
+    .team-room-name {
+        margin-left: 38px !important;
+        margin-top: 3px !important;
+    }
+      
+    .team-room-name span.name {
+        color: #666666 !important;
+        font-size: 13px !important;
+        font-weight: bold !important;
+        text-transform: uppercase;
+    }
+    
+    .team-room-name div.teamroom div.header div.mini-bar div.team-room-name a.edit {
+        margin-top: -6px !important;
+    }
+    
+    div.teamroom > div.header .persona-filters {
+        top: 30px !important;
+    }
+    
+    
+    .teamroomlobby a,
+    .asset-link a.open-by-name[data-assettype="Team"] {
+        background-position: 0 1px !important;
+        background-repeat: no-repeat !important;
+        background-size: contain !important;
+        background-size: 20px 20px !important;
+        border: 0 none !important;
+        padding: 5px 0 5px 30px !important;
+    }
+    
+    /* Dev team */
+    a[rel="TeamRoom:2371"],
+    .asset-link a.open-by-name[href="/AlkamiTechnology/Team.mvc/Summary?oidToken=Team%3A"] {
+        background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A3497");
+    }
+    
+        /* gold team */
+        a[rel="TeamRoom:3167"],
+        .asset-link a.open-by-name[href="/AlkamiTechnology/Team.mvc/Summary?oidToken=Team%3A1818"] {
+            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A3505");
+        }
+        
+        /* black team */
+        a[rel="TeamRoom:3164"],
+        .asset-link a.open-by-name[href="/AlkamiTechnology/Team.mvc/Summary?oidToken=Team%3A"] {
+            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A3504");
+        }
+        
+    
+    /* Support team */
+    a[rel="TeamRoom:3326"],
+    .asset-link a.open-by-name[href="/AlkamiTechnology/Team.mvc/Summary?oidToken=Team%3A"] {
+        background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A3496");
+    }
+    
+
+
+
+    /********** User Avatars **********/
+    
+    
+    .owners a,
+    a.open-by-name[data-assettype="Member"],
+    .inline-asset-detail a.open-by-name[data-assettype="Member"],
+    .member-menu.open a.open-by-name[rel="member-details"],
+    .topic .new-reply .header .name a.open-by-name[data-assettype="Member"] {
+        background-position: 0 1px !important;
+        background-repeat: no-repeat !important;
+        background-size: contain !important;
+        background-size: 20px 20px !important;
+        border: 0 none !important;
+        padding: 5px 0 5px 30px !important;
+    }
+    
+    .recent-item-content a.open-by-name[data-assettype="Member"],
+    .owner-list ul li.owner a[data-assettype="Member"] {
+        background: none !important;
+        padding-left: 0 !important;
+    }
+    
+    .board .content .bottom-content.with-dot .left-bottom-content {
+        padding-left: 0 !important;
+    }
+    
+    .main-card.story-card-container a.open-by-name[data-assettype="Member"] {
+        display: block;
+        float: left;
+        margin-right: 10px !important;
+    }
+    
+    
+        /* Vera */
+        a[rel="Member:2747"],
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A2747"] {
+            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A3203") !important;
+        }
+        
+        /* Aaron */
+        a[rel="Member:2749"],
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A2749"] {
+            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A3166") !important;
+        }
+        
+        
+        /* Bob */
+        a[rel="Member:20"],
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A20"] {
+            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A1887") !important;
+        }
+        
+        
+        /* Cole */
+        a[rel="Member:2753"],
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A2753"] {
+            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A2754") !important;
+        }
+        
+        /* Daron */
+        a[rel="Member:2739"],
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A2739"] {
+            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A3320") !important;
+        }
+    
+        /* Dave */
+        a[rel="Member:2736"],
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A2736"] {
+            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A3233") !important;
+        }
+        
+        /* David Stitzlein */
+        a[rel="Member:2738"],
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A2738"] {
+            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A3213") !important;
+        }
+        
+        /* Dean Kukol */
+        a[rel="Member:2737"],
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A2737"] {
+            background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/no_avatar.png") !important;
+        }
+        
+        /* Jason P */
+        a[rel="Member:2741"],
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A2741"] {
+            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A3182") !important;
+        }
+        
+        /* JD */
+        a[rel="Member:2740"],
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A2740"] {
+            background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/no_avatar.png") !important;
+        }
+        
+        /* Jen */
+        a[rel="Member:1869"],
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A1869"] {
+            background-image: url("https://trello-avatars.s3.amazonaws.com/0c0ab8abe11abffc4678cba6c82a8c0b/original.png") !important;
+        }
+        
+        
+        /* Jimmy */
+        a[rel="Member:2750"],
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A2750"] {
+            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A3217") !important;
+        }
+        
+        /* Joey */
+        a[rel="Member:1889"],
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A1889"] {
+            background-image: url("https://s3.amazonaws.com/uploads.hipchat.com/photos/38256/8cdwafgsos70eq8_125.jpeg") !important;
+        }
+        
+        /* Kelly */
+        a[rel="Member:2743"],
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A2743"] {
+            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A3323") !important;
+        }
+        
+        /* Kevin Asbury */
+        a[rel="Member:2742"],
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A2742"] {
+            background-image: url("https://s3.amazonaws.com/uploads.hipchat.com/photos/145810/3wp0ba4vonu9hxq_36.jpg") !important;
+        }
+        
+        /* Mittul */
+        a[rel="Member:2744"],
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A2744"] {
+            background-image: url("https://s3.amazonaws.com/uploads.hipchat.com/photos/226864/w5jlrqycr83o7nj_125.JPG") !important;
+        }
+        
+        /* Steve Hightower */
+        a[rel="Member:2745"],
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A2745"] {
+            background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/no_avatar.png") !important;
+        }
+        
+        /* Tim Nestler */
+        a[rel="Member:2746"],
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A2746"] {
+            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A3465") !important;
+        }
+        
+        /* Yang */
+        a[rel="Member:2748"],
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A2748"] {
+            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A3513") !important;
+        }
+        
+    
+    
+    /* Table headers */
+    /*
+    .header > td[data-token="TaskStatus125"]:after, 
+    .header > td[data-token="TaskStatus123"]:after {
+        display: block;
+        font-weight: bold;
+        padding: 6px 20px;
+        position: fixed;
+        width: 175px;
+        z-index: 2;
+    }
+    
+    .header > td[data-token="TaskStatus125"]:after {
+        -moz-box-sizing: border-box;
+        background: none repeat scroll 0 0 rgba(163, 193, 130, 0.80);
+        content: "Completed";
+        top: 196px;
+    }
+    
+        table.taskboard td:nth-child(4) {
+            background: #CCD9B9 !important;
+        }
+    
+    .header > td[data-token="TaskStatus123"]:after {
+        -moz-box-sizing: border-box;
+        background: none repeat scroll 0 0 rgba(99, 184, 218, 0.80);
+        content: "In Progress";
+        top: 196px;
+    }
+    
+        table.taskboard td:nth-child(3) {
+            background: #B0CED8 !important;
+        }
+    
+    */
+    
+    
+}
