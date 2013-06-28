@@ -1,8 +1,17 @@
-    html, body, input, textarea, select option, h1, h2, h3,
-    .header span, .header a {
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("www12.v1host.com") {
+
+    html, body, 
+    input, textarea, select option, 
+    h1, h2, h3, a,
+    table td, .header span, .header a {
         font-family: "Helvetica", Arial !important;
     }
-
+    
+    a:hover {
+        text-decoration: none !important;
+    }
     
     select option {
         padding: 10px;
@@ -25,11 +34,12 @@
     
     
     /******* Format work items to look like cards *******/
-    div.window ol li.workitem,
-    .asset-link a.open-by-name[data-assettype="Story"],
-    .asset-link a.open-by-name[data-assettype="Defect"] {
-        background: -moz-linear-gradient(center top , #FFFFFF, #DEDEDE) no-repeat scroll 0 0 transparent;
-        border: 1px solid #CCCCCC !important;
+    .panel.backlog ol li.workitem,
+    .panel.done ol li.workitem,
+    .panel.recent-changes ol li.recent-change,
+    .panel.conversations ol li.topic {
+        background: #FFFFFF !important;
+        border: 2px solid #CCCCCC !important;
         border-radius: 4px;
         font-size: 13px;
         line-height: 135% !important;
@@ -85,15 +95,21 @@
             font-size: 8px;
             position: relative;
         }
+        
+        .board .story-card.defect .right-bottom-content:after {
+            content: " hrs.";
+        }
                
-        td.value input.estimate:after {
+        td.value input#CM_cgf.estimate:after {
             background: green !important;
             content: " pts.";
-            display: inline-block;
+            display: block;
             font-size: 8px;
             height: 20px !important;
-            position: relative; 
+            position: relative !important; 
             width: 100px !important;
+            top: 20px;
+            left: 200px;
         }
     
     .board .story-card.story,
@@ -112,6 +128,7 @@
             color: #333333 !important;
             text-decoration: none !important;
         }
+    
     
     .board .story-card.story {
         /*background: rgba(127, 178, 53, 0.15) !important;*/
@@ -193,15 +210,69 @@
     
     .DetailContent a.open-by-name[data-assettype="Story"],
     .DetailContent a.open-by-name[data-assettype="Defect"],
-    .DetailContent a.open-by-name[data-assettype="Task"] {
+    .DetailContent a.open-by-name[data-assettype="Task"],
+    .asset-summary .asset-link a.open-by-name[data-assettype="Story"], 
+    .asset-summary .asset-link a.open-by-name[data-assettype="Defect"] {
         border-radius: 4px;
         font-size: 12px !important;
         font-weight: normal;
+        line-height: 150% !important;
         padding: 10px !important;
+    }
+    
+    .DetailContent a.open-by-name[data-assettype="Story"],
+    .DetailContent a.open-by-name[data-assettype="Defect"],
+    .DetailContent a.open-by-name[data-assettype="Task"] {
         width: 35% !important;
     }
     
+
     
+    
+    /* Recent Changes  Panel */
+
+    div.window ol li.recent-change .recent-item-content {
+        padding-bottom: 20px !important;
+    }
+    
+
+    div.window ol li.recent-change .what .who, 
+    div.window ol li.recent-change .what .when {
+        bottom: 0;
+        position: absolute;
+    }
+    
+    div.window ol li.recent-change .what .who {
+        display: block !important;
+        
+    }
+    
+    div.window ol li.recent-change .what .when {
+        right: 0;
+    }
+
+    div.window ol li.recent-change .what .asset-id {
+        font-size: 11px !important;
+        font-weight: bold;
+    }
+    
+    div.window ol li.recent-change .what .info {
+        margin: 10px 5px 5px 0 !important;
+    }    
+    /* END */
+    
+    
+    /* Closed Panel */
+    
+    .panel.done ol li.separator {
+        margin-bottom: 15px !important;
+    }
+    
+    .panel.done ol li.workitem + li.separator {
+        margin-top: 30px !important;
+    }
+    
+    / * END */
     
 
 
@@ -230,8 +301,10 @@
         padding: 20px !important;
     }
     
-    table.DetailPageSection a.asset-number-link {
-        font-size: 20px;
+    .DetailContent a.open-by-name.asset-number-link[data-assettype="Story"], 
+    .DetailContent a.open-by-name.asset-number-link[data-assettype="Defect"], 
+    .DetailContent a.open-by-name.asset-number-link[data-assettype="Task"]{
+        font-size: 20px !important;
         font-weight: bold;
     }
     
@@ -258,7 +331,7 @@
         }
     
     .DetailContent tr.item {
-        line-height: 135%;
+        line-height: 135% !important;
     }
     
     .DetailContent tr.item td {
@@ -284,12 +357,14 @@
     /* Open Story */
     
     
-    .asset-summary .toolbar {
-        margin-left: -10px !important;
+    .asset-summary-page {
+        margin: 0 !important;
     }
     
+    
+    .asset-summary .toolbar,
     .page-asset-detail .asset-summary .toolbar {
-        margin-top: -10px !important;
+        margin-left: -10px !important;
     }
     
         .asset-summary.Story .toolbar {  
@@ -304,13 +379,23 @@
             background: rgba(243, 233, 198, 0.80) !important;
         }
         
-            
+        .asset-summary.Epic .toolbar {
+            background: rgba(151, 113, 210, 0.25) !important;
+        }
+        
+        .asset-summary.Timebox .toolbar {
+            background: rgba(68, 152, 171, 0.25) !important;
+        }
         
     
     .asset-heading {
         margin-bottom: 20px !important;
         padding: 10px !important;
     }    
+        .asset-summary.Scope .asset-heading,
+        .asset-summary.Timebox .asset-heading {
+            padding-top: 30px !important;
+        }
     
     .asset-heading span.icon {
         display: block;
@@ -325,6 +410,12 @@
         margin-top: 20px !important;
         padding-left: 60px !important;
     }
+    
+        .asset-summary.Scope .asset-heading h3,
+        .asset-summary.Timebox .asset-heading h3 {
+            clear: none !important;
+            margin-top: 0 !important;
+        }
 
     .asset-summary .asset-heading h4 {
         font-family: Helvetica !important;
@@ -335,13 +426,139 @@
         padding-left: 60px !important;
     }
     
-    
-    .asset-info a[data-assettype="Timebox"] {
+    .asset-info a[data-assettype="Timebox"],
+    .asset-info a[data-assettype="Scope"],
+    .asset-info a[data-assettype="Theme"],
+    .asset-info a[data-assettype="Epic"]{
         background-position: 0 2px !important;
         background-repeat: no-repeat !important;
-        background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/icons/Iteration-Icon.gif") !important;
         padding: 5px 0 5px 30px !important;
     }
+    
+        .asset-info a[data-assettype="Timebox"] {
+            background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/icons/Iteration-Icon.gif") !important;
+        }
+        
+        .asset-info a[data-assettype="Scope"] {
+            background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/icons/Project-Icon.gif") !important;
+        }
+        
+        .asset-info a[data-assettype="Theme"] {
+            background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/icons/Theme-Icon.gif") !important;
+        }
+        
+        .asset-info a[data-assettype="Epic"] {
+            background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/icons/Epic-Icon.gif") !important;
+        }
+        
+    
+    .asset-summary .scroll-view {
+        padding-left: 10px !important;
+    }
+    
+    .asset-summary .scroll-view h2 {
+        margin-bottom: 20px !important;
+    }
+    
+    .fields label {
+        color: #777777 !important;
+        font-size: 10px !important;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+
+    
+    .asset-info .where-fields, 
+    .asset-info .what-fields, 
+    .asset-info .other-extended-fields, 
+    .asset-info .other-extended-fields-2 {
+        background: none repeat scroll 0 0 #EFEFEF;
+        border-left: 0 none !important;
+        border-radius: 4px 4px 4px 4px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        margin-right: 3% !important;
+        padding: 10px 2% !important;
+        width: 48% !important;
+    }
+    
+        .asset-info .what-fields,
+        .asset-info .other-extended-fields-2 {
+            margin-right: 0 !important;
+        }
+        
+        .asset-info div.text, 
+        .asset-info div.asset-link {
+            margin: 15px 0 !important;
+        }
+        
+    
+    .asset-info .rich-text {
+        margin: 20px 0 !important;
+    }
+
+
+
+    
+    .what-fields div.text:first-child div.value {
+        background: none repeat scroll 0 0 #666666;
+        border-radius: 4px;
+        color: #FFFFFF;
+        display: inline-block;
+        line-height: 100% !important;
+        padding: 5px !important;
+    }
+    
+    
+    .tab {
+        margin-left: 20px !important;
+        margin-top: 4px !important;
+    }
+    
+    .tab:hover {
+        background: rgba(255, 255, 255, 0.30) !important;
+        border-radius: 4px 4px 0 0;
+    }
+
+        .tab.selected > a {
+            color: #333333 !important;
+            padding: 0 20px !important;
+        }
+        
+        
+        .tab.selected {
+            background: none repeat scroll 0 0 #FFFFFF !important;
+            border-radius: 4px 4px 0 0;
+            border-top: 1px solid #333333 !important;
+            color: #333333 !important;
+        }
+
+    
+    
+
+    
+    
+    /* Move fields into sidebar *
+    .asset-info .fields .where-fields,
+    .asset-info .fields .what-fields {
+        float: right;
+        clear: right;
+        width: 35% !important;
+    }
+    
+    .asset-info .fields .rich-text {
+        float: left;
+        width: 50% !important;
+    }
+    
+    .asset-info .fields .other-extended-fields,
+    .asset-info .fields .other-extended-fields-2 {
+        clear: both !important;
+        float: none;
+    }
+    */
+    
     
     
     /* Badges 
@@ -399,6 +616,20 @@
         line-height: 150% !important;
         margin: 15px 0 10px 30px !important;
     }
+    
+    
+    /* Tasks */
+    
+    .gg .open-by-name.asset-hover.asset-name-link {
+        background-image: url("/s/13.1.2.8/css/images/icons/Task-Icon.gif");
+        background-repeat: no-repeat;
+        display: block !important;
+        margin-top: -15px;
+        padding-left: 25px;
+        padding-top: 0;
+    }
+
+
     
     
     /************ Priorities ************/
@@ -516,7 +747,7 @@
         
         /* black team */
         a[rel="TeamRoom:3164"],
-        .asset-link a.open-by-name[href="/AlkamiTechnology/Team.mvc/Summary?oidToken=Team%3A"] {
+        .asset-link a.open-by-name[href="/AlkamiTechnology/Team.mvc/Summary?oidToken=Team%3A1817"] {
             background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A3504");
         }
         
@@ -532,6 +763,16 @@
 
     /********** User Avatars **********/
     
+    /* remove commas in cards */
+    .bottom-content .gadget.multivaluedropdown div { font-size: 0; } 
+        .bottom-content .gadget.multivaluedropdown div a,
+        .owners .gadget.multivaluedropdown div a { font-size: 10px; }
+    
+    .asset-link .value.open-by-name[data-assettype="Member"] {
+        clear: left;
+        display: block;
+        float: left;
+    }
     
     .owners a,
     a.open-by-name[data-assettype="Member"],
@@ -543,20 +784,28 @@
         background-size: contain !important;
         background-size: 20px 20px !important;
         border: 0 none !important;
-        padding: 5px 0 5px 30px !important;
+        padding: 5px 0 5px 27px !important;
     }
     
     .recent-item-content a.open-by-name[data-assettype="Member"],
-    .owner-list ul li.owner a[data-assettype="Member"] {
+    .owner-list ul li.owner a[data-assettype="Member"],
+    .ui-tooltip a[data-assettype="Member"],
+    .gadgetbox a.asset-name-link[data-assettype="Member"] {
         background: none !important;
+        clear: none !important;
         padding-left: 0 !important;
     }
+    
+        .gadgetbox a.asset-name-link[data-assettype="Member"] {
+            padding-left: 27px !important;
+        }
     
     .board .content .bottom-content.with-dot .left-bottom-content {
         padding-left: 0 !important;
     }
     
-    .main-card.story-card-container a.open-by-name[data-assettype="Member"] {
+    .story-card-container a.open-by-name[data-assettype="Member"] {
+        clear: left;
         display: block;
         float: left;
         margin-right: 10px !important;
@@ -665,7 +914,7 @@
         /* Steve Hightower */
         a[rel="Member:2745"],
         a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A2745"] {
-            background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/no_avatar.png") !important;
+            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A4264") !important;
         }
         
         /* Tim Nestler */
@@ -717,3 +966,37 @@
         }
     
     */
+    
+    /* Conversations Panel */
+    
+    .panel.conversations .name a.open-by-name[data-assettype="Member"] {
+        background: none !important;
+        padding-left: 0 !important;
+    }    
+    
+    /* END */
+    
+    
+    /* Inbox */
+    
+    tr[_v1_type="MessageReceipt"] td.gg img.middle {
+        float: left;
+    }
+    
+    tr[_v1_type="MessageReceipt"] td.gg img.middle + a.asset-hover {
+        display: block !important;
+        float: left;
+        padding-left: 10px !important;
+        width: 80% !important; 
+    }
+    
+    tr[_v1_type="MessageReceipt"] td.gg a[data-assettype="Member"] {
+        font-size: 10px !important;
+        white-space: no-wrap !important;
+
+    }
+    
+    /* END */
+    
+    
+}
