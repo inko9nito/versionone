@@ -2,6 +2,18 @@
 
 @-moz-document domain("www12.v1host.com") {
 
+    /* Table of Contents 
+
+    - Global 
+    - Cards
+    - 
+
+    */
+
+    /* TODO: organize stylesheet */
+
+    /********** GLOBAL **********/
+
     html, body, 
     input, textarea, select option, 
     h1, h2, h3, a,
