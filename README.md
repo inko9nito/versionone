@@ -1,8 +1,12 @@
-This is a (very disorganized) stylesheet for Version One. 
+# About
 
-TODO: organize it.
+This is a (very disorganized) stylesheet for VersionOne, modifying the Team Room view. The rest of VersionOne is mostly untouched. 
 
-# Stylish Instructions
+- [Known issues and future developments](https://github.com/inko9nito/versionone/issues)
+
+# Instructions
+
+Load the two stylesheets into your browser using the Stylish plugin. 
 
 - [Instructions for Firefox](http://userstyles.org/help/stylish_firefox)
 - [Instructions for Chrome](http://userstyles.org/help/stylish_chrome)
