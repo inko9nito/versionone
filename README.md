@@ -2,6 +2,11 @@ This is a (very disorganized) stylesheet for Version One.
 
 TODO: organize it.
 
+# Stylish Instructions
+
+- [Instructions for Firefox](http://userstyles.org/help/stylish_firefox)
+- [Instructions for Chrome](http://userstyles.org/help/stylish_chrome)
+
 # Screenshots
 
 ### Taskboard with sidebars
