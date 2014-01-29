@@ -1,0 +1,137 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("www12.v1host.com") {
+
+/* Edit issue */
+
+    .DetailPageWrapper {
+        margin: 0 !important;
+    }
+    
+    .DetailPageWrapper .t {
+        padding: 30px 20px !important;
+    }
+
+    .DetailPageWrapper .title h2 {
+        color: #555555 !important;
+        font-size: 25px !important;
+        font-weight: bold !important;
+    }
+    
+    .DetailPageWrapper .links {
+        margin-top: -15px !important;
+      }  
+
+    .DetailPageWrapper form#theForm {
+        background: none #FFFFFF !important;
+        border: 1px solid #CCCCCC !important;
+        border-radius: 5px 5px 5px 5px;
+        box-shadow: 0 0 7px 0 #CCCCCC;
+        margin: 30px auto !important;
+        width: 790px;        
+    }
+    
+    div.t button {
+        color: #444444 !important;
+        font-family: Helvetica !important;
+        font-weight: bold !important;
+        padding: 8px 15px !important;
+    }
+    
+    
+    /********** BUTTONS **********/
+    
+    /* Primary button */
+    div.t button:first-child {
+        background: -moz-linear-gradient(center top , #444444, #060606) !important;
+        border: 1px solid #000000 !important;
+        box-shadow: 0 1px rgba(255, 255, 255, 0.20) inset !important;
+        color: #FFFFFF !important;
+        text-shadow: 0 0 1px #000000 !important;
+    }
+    
+        div.t button:first-child:hover {
+            background: -moz-linear-gradient(center top , #555555, #333333) !important;
+        }
+        
+    div.t button:last-child {
+        background: none !important;
+        border-color: #CCCCCC !important;
+        color: #666666 !important;
+        margin-left: 25px !important;
+        text-shadow: none !important;
+    }
+        div.t button:last-child:hover {
+            color: #333333 !important;
+        }
+    
+    /********** END BUTTONS **********/
+    
+    table.Pane {
+        border: 0 none !important;
+        margin-left: 20px !important;
+        margin-top: 20px !important;
+    }
+    
+    div.mce-tinymce.mce-container.mce-panel {
+        width: 90% !important;
+    }
+
+
+    
+    .DetailContent a.open-by-name.asset-number-link[data-assettype="Story"], 
+    .DetailContent a.open-by-name.asset-number-link[data-assettype="Defect"], 
+    .DetailContent a.open-by-name.asset-number-link[data-assettype="Task"]{
+        font-size: 20px !important;
+        font-weight: bold;
+    }
+    
+    table.DetailPageSection input.text.name {
+        padding: 15px 10px 12px !important;
+        width: 75%;
+    }
+    
+    table.DetailPageSection a.asset-parent-link,
+    .DetailContent a.open-by-name {
+        display: block;
+        float: left !important;
+        margin-right: 20px;
+        padding: 15px !important;
+        width: 70% !important;
+    }
+    
+    /* dropdown */
+    table.DetailPageSection .dropdown .dd-table {
+        width: 200px !important;
+    }
+    
+        table.DetailPageSection .dropdown .ddtext {
+            height: 20px;
+            padding: 10px 10px 7px !important;
+        }
+    
+    .DetailContent tr.item {
+        line-height: 135% !important;
+    }
+    
+    .DetailContent tr.item td {
+        padding: 5px 0 !important;
+    }
+
+    
+    .detail .pane input[type="text"]#CM_amed,
+    .DetailPageSection .Pane input[type="text"]#CM_amed,
+    .DetailContent input.text.name {
+        font-size: 18px !important;
+        padding: 15px 10px 10px !important;
+    }
+    
+    .detail .pane textarea, 
+    .DetailPageSection .Pane textarea, 
+    .detail .pane input[type="text"], 
+    .DetailPageSection .Pane input[type="text"] {
+        padding: 10px !important;
+    }
+    
+
+}
