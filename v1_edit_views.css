@@ -14,8 +14,9 @@
 
     .DetailPageWrapper .title h2 {
         color: #555555 !important;
+        font-family: "Roboto", "Helvetica", Arial, sans-serif !important;
         font-size: 25px !important;
-        font-weight: bold !important;
+        font-weight: 500 !important;
     }
     
     .DetailPageWrapper .links {
@@ -31,15 +32,16 @@
         width: 790px;        
     }
     
+    /********** BUTTONS **********/
+    
     div.t button {
         color: #444444 !important;
-        font-family: Helvetica !important;
-        font-weight: bold !important;
+        font-family: "Roboto", "Helvetica", Arial, sans-serif !important;
+        font-size: 14px !important;
+        font-weight: 700;
         padding: 8px 15px !important;
     }
     
-    
-    /********** BUTTONS **********/
     
     /* Primary button */
     div.t button:first-child {

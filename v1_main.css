@@ -2,12 +2,26 @@
 
 @-moz-document domain("www12.v1host.com") {
 
+    @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+
+
     html, body, 
     input, textarea, select option, 
     h1, h2, h3, a,
-    table td, .header span, .header a {
+    table td, .header span, .header a,
+    .navigation {
         font-family: "Helvetica", Arial !important;
     }
+    
+    .navigation,
+    .toolbar a,
+    .relation-links a,
+    .titlebar,
+    .actions a {
+        font-family: "Roboto", "Helvetica", Arial, sans-serif !important;
+        font-weight: 400;
+    }
+
     
     a:hover {
         text-decoration: none !important;
@@ -349,8 +363,9 @@
       
     .asset-summary .asset-heading h3 {
         clear: both;
+        font-family: 'Roboto', sans-serif !important;
         font-size: 20px !important;
-        font-weight: normal !important;
+        font-weight: 400 !important;
         line-height: 150%;
         margin-top: 20px !important;
         padding-left: 60px !important;
@@ -363,9 +378,9 @@
         }
 
     .asset-summary .asset-heading h4 {
-        font-family: Helvetica !important;
-        font-size: 20px !important;
-        font-weight: bold !important;
+        font-family: 'Roboto', sans-serif;
+        font-size: 24px !important;
+        font-weight: 700 !important;
         margin-top: 10px !important;
         margin-bottom: 10px !important;
         padding-left: 60px !important;
