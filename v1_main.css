@@ -4,25 +4,6 @@
 
     @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
 
-
-    html, body, 
-    input, textarea, select option, 
-    h1, h2, h3, a,
-    table td, .header span, .header a,
-    .navigation {
-        font-family: "Helvetica", Arial !important;
-    }
-    
-    .navigation,
-    .toolbar a,
-    .relation-links a,
-    .titlebar,
-    .actions a {
-        font-family: "Roboto", "Helvetica", Arial, sans-serif !important;
-        font-weight: 400;
-    }
-
-    
     a:hover {
         text-decoration: none !important;
     }
@@ -39,7 +20,6 @@
     
 
     /* Truncate long nicknames in team directory */
-    
     
     div.teamroom > div.header .persona-filters .owner-list ul li .name {
         overflow-x: hidden;
@@ -220,6 +200,7 @@
             position: relative;
         }
         
+        
     /* Related Asset styling - when you add an attachment */
     
     .DetailContent a.open-by-name[data-assettype="Story"],
@@ -273,7 +254,7 @@
     div.window ol li.recent-change .what .info {
         margin: 10px 5px 5px 0 !important;
     }    
-    /* END */
+    /* END Recent Changes  Panel */
     
     
     /* Closed Panel */
@@ -286,7 +267,7 @@
         margin-top: 30px !important;
     }
     
-    /* END */
+    /* END Closed Panel */
     
 
 
@@ -310,267 +291,6 @@
         
     
     
-
-
-
-    /* Open Story */
-    
-    
-    .asset-summary-page {
-        margin: 0 !important;
-    }
-    
-    
-    .asset-summary .toolbar,
-    .page-asset-detail .asset-summary .toolbar {
-        margin-left: -10px !important;
-    }
-    
-        .asset-summary.Story .toolbar {  
-            background: #E5F0D7 !important;        
-         }
-     
-        .asset-summary.Defect .toolbar {  
-            background: #F4E5E5 !important;
-        }
-        
-        .asset-summary.Task .toolbar {
-            background: rgba(243, 233, 198, 0.80) !important;
-        }
-        
-        .asset-summary.Epic .toolbar {
-            background: rgba(151, 113, 210, 0.25) !important;
-        }
-        
-        .asset-summary.Timebox .toolbar {
-            background: rgba(68, 152, 171, 0.25) !important;
-        }
-        
-    
-    .asset-heading {
-        margin-bottom: 20px !important;
-        padding: 10px !important;
-    }    
-        .asset-summary.Scope .asset-heading,
-        .asset-summary.Timebox .asset-heading {
-            padding-top: 30px !important;
-        }
-    
-    .asset-heading span.icon {
-        display: block;
-        margin: 0 10px 10px !important;
-    }
-      
-    .asset-summary .asset-heading h3 {
-        clear: both;
-        font-family: 'Roboto', sans-serif !important;
-        font-size: 20px !important;
-        font-weight: 400 !important;
-        line-height: 150%;
-        margin-top: 20px !important;
-        padding-left: 60px !important;
-    }
-    
-        .asset-summary.Scope .asset-heading h3,
-        .asset-summary.Timebox .asset-heading h3 {
-            clear: none !important;
-            margin-top: 0 !important;
-        }
-
-    .asset-summary .asset-heading h4 {
-        font-family: 'Roboto', sans-serif;
-        font-size: 24px !important;
-        font-weight: 700 !important;
-        margin-top: 10px !important;
-        margin-bottom: 10px !important;
-        padding-left: 60px !important;
-    }
-    
-    .asset-info a[data-assettype="Timebox"],
-    .asset-info a[data-assettype="Scope"],
-    .asset-info a[data-assettype="Theme"],
-    .asset-info a[data-assettype="Epic"]{
-        background-position: 0 2px !important;
-        background-repeat: no-repeat !important;
-        padding: 5px 0 5px 30px !important;
-    }
-    
-        .asset-info a[data-assettype="Timebox"] {
-            background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/icons/Iteration-Icon.gif") !important;
-        }
-        
-        .asset-info a[data-assettype="Scope"] {
-            background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/icons/Project-Icon.gif") !important;
-        }
-        
-        .asset-info a[data-assettype="Theme"] {
-            background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/icons/Theme-Icon.gif") !important;
-        }
-        
-        .asset-info a[data-assettype="Epic"] {
-            background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/icons/Epic-Icon.gif") !important;
-        }
-        
-    
-    .asset-summary .scroll-view {
-        padding-left: 10px !important;
-    }
-    
-    .asset-summary .scroll-view h2 {
-        margin-bottom: 20px !important;
-    }
-    
-    .fields label {
-        color: #777777 !important;
-        font-size: 10px !important;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-
-
-    
-    .asset-info .where-fields, 
-    .asset-info .what-fields, 
-    .asset-info .other-extended-fields, 
-    .asset-info .other-extended-fields-2 {
-        background: none repeat scroll 0 0 #EFEFEF;
-        border-left: 0 none !important;
-        border-radius: 4px 4px 4px 4px;
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        margin-right: 3% !important;
-        padding: 10px 2% !important;
-        width: 48% !important;
-    }
-    
-        .asset-info .what-fields,
-        .asset-info .other-extended-fields-2 {
-            margin-right: 0 !important;
-        }
-        
-        .asset-info div.text, 
-        .asset-info div.asset-link {
-            margin: 15px 0 !important;
-        }
-        
-    
-    .asset-info .rich-text {
-        margin: 20px 0 !important;
-    }
-
-
-
-    
-    .what-fields div.text:first-child div.value {
-        background: none repeat scroll 0 0 #666666;
-        border-radius: 4px;
-        color: #FFFFFF;
-        display: inline-block;
-        line-height: 100% !important;
-        padding: 5px !important;
-    }
-    
-    
-    .tab {
-        margin-left: 20px !important;
-        margin-top: 4px !important;
-    }
-    
-    .tab:hover {
-        background: rgba(255, 255, 255, 0.30) !important;
-        border-radius: 4px 4px 0 0;
-    }
-
-        .tab.selected > a {
-            color: #333333 !important;
-            padding: 0 20px !important;
-        }
-        
-        
-        .tab.selected {
-            background: none repeat scroll 0 0 #FFFFFF !important;
-            border-radius: 4px 4px 0 0;
-            border-top: 1px solid #333333 !important;
-            color: #333333 !important;
-        }
-
-    
-    
-
-    
-    
-    /* Move fields into sidebar *
-    .asset-info .fields .where-fields,
-    .asset-info .fields .what-fields {
-        float: right;
-        clear: right;
-        width: 35% !important;
-    }
-    
-    .asset-info .fields .rich-text {
-        float: left;
-        width: 50% !important;
-    }
-    
-    .asset-info .fields .other-extended-fields,
-    .asset-info .fields .other-extended-fields-2 {
-        clear: both !important;
-        float: none;
-    }
-    */
-    
-    
-    
-    /* Badges 
-    
-    .relation-links ul {
-        text-align: left !important;
-    }
-    
-        .relation-links ul li {
-            background: #EFEFEF;
-            border: 1px solid #DFDFDF !important;
-            border-radius: 4px;
-            color: #333333;
-            float: left;
-            font-size: 20px;
-            font-weight: bold;
-            height: 60px;
-            letter-spacing: 4px;
-            margin-right: 10px;
-            padding: 10px !important;
-            position: relative;
-            text-align: center;
-            width: 10%;
-        }
-        
-            .relation-links ul li a {
-                color: #666666 !important;
-                display: block;
-                font-size: 10px;
-                font-weight: bold;
-                letter-spacing: normal;
-                margin-bottom: 20px;
-                margin-right: 10px !important;
-                text-transform: uppercase;
-            }
-            
-            .relation-links ul li .count {
-                color: #666666 !important;
-                display: inline-block;
-                font-weight: bold;
-            }
-        
-        
-        
-        .scroll-view,
-        .asset-summary-page .asset-info {
-            clear: both !important;
-            margin-top: 100px !important;
-        }
-        
-        */
-    
     /* Conversation / Comment styling */
     .asset-summary .conversations .conversations-stream > li.topic .details .content {
         line-height: 150% !important;
@@ -579,7 +299,7 @@
     
     
     /* Tasks */
-    
+
     .gg .open-by-name.asset-hover.asset-name-link {
         background-image: url("/s/13.1.2.8/css/images/icons/Task-Icon.gif");
         background-repeat: no-repeat;
@@ -1049,42 +769,6 @@
         text-align: left;
     }
 
-
-    
-    /*
-    .header > td[data-token="TaskStatus125"]:after, 
-    .header > td[data-token="TaskStatus123"]:after {
-        display: block;
-        font-weight: bold;
-        padding: 6px 20px;
-        position: fixed;
-        width: 175px;
-        z-index: 2;
-    }
-    
-    .header > td[data-token="TaskStatus125"]:after {
-        -moz-box-sizing: border-box;
-        background: none repeat scroll 0 0 rgba(163, 193, 130, 0.80);
-        content: "Completed";
-        top: 196px;
-    }
-    
-        table.taskboard td:nth-child(4) {
-            background: #CCD9B9 !important;
-        }
-    
-    .header > td[data-token="TaskStatus123"]:after {
-        -moz-box-sizing: border-box;
-        background: none repeat scroll 0 0 rgba(99, 184, 218, 0.80);
-        content: "In Progress";
-        top: 196px;
-    }
-    
-        table.taskboard td:nth-child(3) {
-            background: #B0CED8 !important;
-        }
-    
-    */
     
     /* Conversations Panel */
     
@@ -1093,7 +777,7 @@
         padding-left: 0 !important;
     }    
     
-    /* END */
+    /* END Conversations Panel */
     
     
     /* Inbox */

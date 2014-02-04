@@ -1,0 +1,258 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("www12.v1host.com") {
+
+
+    /********** Generic **********/
+    
+    /* Layout */
+    .inline-asset-detail {
+        min-width: 780px !important;
+        max-width: 70% !important;
+    }
+    
+    .main-panel-scroller {
+        left: 0 !important;
+        right: 52px !important;
+        /* this part broke scrolling: *
+         * top: auto !important;
+         * position: relative !important;*/
+    }
+    
+    .asset-summary .fields {
+        margin-top: 20px !important;
+    }
+    
+    /* Header */
+    .asset-summary .asset-heading h3.title {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: block !important;
+        line-height: 135% !important;
+        width: 100% !important;
+    }
+    
+    /* Tabs in header */
+    .asset-heading .tabbar {
+        display: block !important;
+        padding-bottom: 0 !important;
+        text-align: left !important;
+    }
+    .asset-heading > *:not(script) {
+        display: block !important;
+        width: auto !important;
+    }
+    
+    .asset-heading .tabbar .tabs,
+    .asset-heading .tabbar .tab-buttons {
+        margin-bottom: 0 !important;
+    }
+    
+    .asset-heading .tabbar .tab-buttons {
+        float: right;
+        background-color: transparent;
+    }
+        .asset-heading .tabbar .tab-buttons .tab-button {
+            background: none !important;
+        }
+    
+    .asset-summary .asset-heading ul {
+        margin-bottom: 0 !important;
+    }
+        
+        .asset-heading .tabbar .tab a {
+            border-radius: 4px 4px 0 0 !important;
+            font-size: 12px;
+        }
+    
+        .asset-heading .tabbar .tab a:hover {
+            background-color: rgba(255, 255, 255, 0.25) !important;
+            color: #FFFFFF !important;
+        }
+    
+        .asset-heading .tabbar .tab.selected a {
+            border-bottom: 1px solid #FFFFFF;
+        }
+        
+        .asset-heading .tabbar .tab.selected a:hover {
+            background-color: #FFFFFF !important;
+            color: #262626 !important;
+        }
+    
+
+    /********** Relation Links **********/
+    
+    .relation-links {
+        margin-top: 10px !important;
+    }
+    
+    .relation-links ul {
+        border-bottom: 0 none !important;
+        padding: 0 !important;
+    }
+        
+        .relation-links li {
+            background-color: #EFEFEF;
+            border-radius: 3px;
+            border-right: 0 none !important;
+            display: inline-block;
+            padding: 4px 10px !important;
+        }
+        
+            .relation-links li a {
+                color: #07496B !important;
+            }
+            
+            .relation-links li a:hover {
+                color: #009FF2 !important;
+            }
+
+
+    /********** Details boxes **********/
+    
+    /* Labels */
+    .fields label {
+        font-size: 11px !important;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    /* remove left border from fields */
+    .fields .rich-text,
+    .fields .custom-fields,
+    .fields .detail-tracking,
+    .fields .updates {
+        border-left: 0 none !important;
+    }
+    
+    .asset-info .where-fields, 
+    .asset-info .what-fields, 
+    .asset-info .other-extended-fields, 
+    .asset-info .other-extended-fields-2 {
+        background: none repeat scroll 0 0 #EFEFEF;
+        border-left: 0 none !important;
+        border-radius: 4px 4px 4px 4px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        margin-right: 3% !important;
+        padding: 10px 2% !important;
+        width: 48% !important;
+    }
+    
+        .asset-info .what-fields,
+        .asset-info .other-extended-fields-2 {
+            margin-right: 0 !important;
+        }
+        
+        .asset-info div.text, 
+        .asset-info div.asset-link {
+            margin: 15px 0 !important;
+        }
+    
+    
+    /* Add more space around Description to help it stand out */
+    .fields .rich-text {
+        margin: 20px 0 40px !important;
+    }
+
+    /* Add ephasis to status */
+    .what-fields div.text:first-child div.value {
+        background: none repeat scroll 0 0 #666666;
+        border-radius: 4px;
+        color: #FFFFFF;
+        display: inline-block;
+        line-height: 100% !important;
+        padding: 5px !important;
+    }
+    
+  
+    /* Icons in Details boxes */
+    
+    .asset-info a[data-assettype="Timebox"],
+    .asset-info a[data-assettype="Scope"],
+    .asset-info a[data-assettype="Theme"],
+    .asset-info a[data-assettype="Epic"]{
+        background-position: 0 2px !important;
+        background-repeat: no-repeat !important;
+        padding: 5px 0 5px 30px !important;
+    }
+        .asset-info a[data-assettype="Timebox"] {
+            background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/icons/Iteration-Icon.gif") !important;
+        }
+        
+        .asset-info a[data-assettype="Scope"] {
+            background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/icons/Project-Icon.gif") !important;
+        }
+        
+        .asset-info a[data-assettype="Theme"] {
+            background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/icons/Theme-Icon.gif") !important;
+        }
+        
+        .asset-info a[data-assettype="Epic"] {
+            background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/icons/Epic-Icon.gif") !important;
+        }
+    
+    
+    /********** Don't remember what this does **********/
+    .asset-summary .scroll-view {
+        padding-left: 10px !important;
+    }
+    
+    .asset-summary .scroll-view h2 {
+        margin-bottom: 20px !important;
+    }
+    
+    
+    
+    /********** Side  Panel **********/
+    /* Move side panel to the right */
+    
+    /* side panel closed */
+    .side-panel,
+    .side-panel.closed {
+        left: auto !important;
+        right: 0 !important;
+        width: 42px !important;
+    }
+    
+    .main-panel,
+    .main-panel.side-panel-closed {
+        margin-left: 0 !important;
+        margin-right: 42px !important;
+    }
+    
+    
+    /* side panel openened */
+    .side-panel.opened {
+        left: auto !important;
+        right: 0 !important;
+        width: 449px !important;
+    }
+    
+    .main-panel.side-panel-opened {
+        margin-left: 0 !important;
+        margin-right: 449px !important;
+    }
+    
+    .main-panel.side-panel-opened .main-panel-scroller {
+        left: 0 !important;
+        right: 459px !important;
+    }
+    
+        /* keep tab bar on the right when side panel is opened */
+        .side-panel.opened .tabs {
+            position: absolute;
+            right: 0 !important;
+        }
+        
+        .side-panel.opened .tab-content-container {
+            left: auto !important;
+            right: 42px !important;
+        }
+        
+    /* TODO: Move side panel below the title */
+
+    
+
+}
