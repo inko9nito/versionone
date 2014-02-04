@@ -1,6 +1,6 @@
 # About
 
-This is a (very disorganized) stylesheet for VersionOne, modifying the Team Room view. The rest of VersionOne is mostly untouched. 
+This is a stylesheet for VersionOne, modifying the Team Room view. The rest of VersionOne is mostly untouched. 
 
 - [Known issues and future developments](https://github.com/inko9nito/versionone/issues)
 
