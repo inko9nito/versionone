@@ -13,14 +13,16 @@ Copy and paste the contents of the two stylesheets using the Stylish plugin.
 
 # Screenshots
 
-### Taskboard with sidebars
-![Taskboard screenshot](http://content.screencast.com/users/inko9nito/folders/Jing/media/b0ef99dc-43d0-49ee-8608-a0b036d25bf7/00006517.png)
- 
+#### Taskboard with sidebars
+
 - Issues are formatted as cards in the Backlog
 - Priorities are spelled out and color-coded
 - Avatars of assigned users on stories, defects and tasks
 - Point estimates made more obvious and have a "pts" suffix to remind users that they are estimated in points rather than hours
 - Subscribers avatars in Conversation sidebar
+
+![Taskboard screenshot](http://content.screencast.com/users/inko9nito/folders/Jing/media/b0ef99dc-43d0-49ee-8608-a0b036d25bf7/00006517.png)
+
 
 ***
 
@@ -29,24 +31,32 @@ Copy and paste the contents of the two stylesheets using the Stylish plugin.
 
 ***
 
-### Story Modal
-![Story modal screenshot](http://content.screencast.com/users/inko9nito/folders/Jing/media/8244fc46-3418-47f7-ab83-a98702692b5c/00006513.png)
+#### Story Modal
 
-- Story ID and title are larger and have a colorcoded background (stories are green, defects are red)
+- Conversations sidebar moved to the right
 - Icons in the details boxes
 - User avatars
-- Highlightd Status
+- Ephasized Status
+
+![Story modal screenshot](http://content.screencast.com/users/inko9nito/folders/Jing/media/e1dff13b-b510-4798-a56f-00aa739e6a03/00006593.png)
+
 
 ***
 
-### Tasks
+#### Tasks
+
+- User avatars next to tasks
+
 ![Tasks screenshot](http://content.screencast.com/users/inko9nito/folders/Jing/media/dc7ceab3-e9fb-4e84-b25c-d67c7403a954/00006514.png)
 
-- User avatars
+
 
 ***
 
-### Create New Story
-![New Story screenshot](http://content.screencast.com/users/inko9nito/folders/Jing/media/d61083ea-bfbb-4e73-b4a8-2fa930e9a67e/00006515.png)
+#### Create New Story
 
 - Buttons are bigger and color coded
+
+![New Story screenshot](http://content.screencast.com/users/inko9nito/folders/Jing/media/d61083ea-bfbb-4e73-b4a8-2fa930e9a67e/00006515.png)
+
+
