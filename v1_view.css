@@ -89,7 +89,7 @@
     
     .relation-links ul {
         border-bottom: 0 none !important;
-        padding: 0 !important;
+       
     }
         
         .relation-links li {
@@ -252,7 +252,7 @@
         }
         
     /* TODO: Move side panel below the title */
-
+    /* TODO: remove commas between owners */    
     
 
 }

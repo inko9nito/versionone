@@ -452,9 +452,9 @@
     /********** User Avatars **********/
     
     /* remove commas in cards */
-    .bottom-content .gadget.multivaluedropdown div { font-size: 0; } 
-        .bottom-content .gadget.multivaluedropdown div a,
-        .owners .gadget.multivaluedropdown div a { font-size: 10px; }
+    .bottom-content .lookup { font-size: 0 !important; } 
+        .bottom-content .lookup a,
+        .owners .lookup a { font-size: 10px; }
     
     .asset-link .value.open-by-name[data-assettype="Member"] {
         clear: left;
