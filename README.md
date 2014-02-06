@@ -10,6 +10,7 @@ Copy and paste the contents of all three stylesheets using the Stylish plugin.
 
 - [Instructions for Firefox](http://userstyles.org/help/stylish_firefox)
 - [Instructions for Chrome](http://userstyles.org/help/stylish_chrome)
+  - [Watch a screencast](http://screencast.com/t/1SnxsZujqRX)
 
 # Screenshots
 
