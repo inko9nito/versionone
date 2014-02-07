@@ -8,9 +8,9 @@ This is a stylesheet for VersionOne, modifying the Team Room view. The rest of V
 
 Copy and paste the contents of all three stylesheets using the Stylish plugin.
 
-- [Instructions for Firefox](http://userstyles.org/help/stylish_firefox)
-- [Instructions for Chrome](http://userstyles.org/help/stylish_chrome)
-  - [Watch a screencast](http://screencast.com/t/1SnxsZujqRX)
+- <a href="http://userstyles.org/help/stylish_firefox" target="_blank">Instructions for Firefox</a>
+- <a href="http://userstyles.org/help/stylish_chrome" target="_blank">Instructions for Chrome</a>
+  - <a href="http://screencast.com/t/1SnxsZujqRX" target="_blank">Watch a screencast</a>
 
 # Screenshots
 
