@@ -51,6 +51,17 @@ Copy and paste the contents of all three stylesheets using the Stylish plugin.
 ![Tasks screenshot](http://content.screencast.com/users/inko9nito/folders/Jing/media/dc7ceab3-e9fb-4e84-b25c-d67c7403a954/00006514.png)
 
 
+***
+
+#### Links
+
+- Favicons next to links based on the URL
+ - InVision
+ - Google Drive
+ - ZenDesk
+
+![Links screenshot](http://content.screencast.com/users/inko9nito/folders/Jing/media/f4104d1f-27b8-435d-b049-369e20ab92bf/00006665.png)
+
 
 ***
 
