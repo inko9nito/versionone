@@ -254,8 +254,9 @@
 
     /****** Icons in Links section ******/
 
+
     tr[_v1_asset^="Link"] td.gg:first-child a {
-        padding-left: 20px;
+        padding-left: 30px;
     }
 
     td.gg:first-child a.link {
@@ -263,11 +264,13 @@
     }
 
     td.gg:first-child a.link:before {
+        background-image: url("https://www12.v1host.com/s/14.0.2.6652/css/images/hovers/hover-icons-16x20px.png");
+        background-position: -20px -16px;
         background-repeat: no-repeat;
         content: "";
         display: block;
         height: 16px;
-        left: -4px;
+        left: 4px;
         position: absolute;
         top: 0;
         width: 16px;
@@ -280,18 +283,46 @@
     /* ZenDesk */
     td.gg:first-child a[href^="https://alkami.zendesk.com"].link:before {
         background-image: url("http://www.zendesk.com/favicon.ico");
+        background-position: 0;
     }
 
     /* InVision */
     td.gg:first-child a[href^="https://projects.invisionapp.com"].link:before,
     td.gg:first-child a[href^="http://invis.io"].link:before {
         background-image: url("http://www.invisionapp.com/favicon.ico");
+        background-position: 0;
     }
 
     /* Google Drive */
     td.gg:first-child a[href^="https://docs.google.com"].link:before {
         background-image: url("http://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_4.ico");
+        background-position: 0;
     }
+
+
+    /********** Icons in Attachments section **********/
+
+    tr[_v1_asset^="Attachment"] td.gg:first-child a {
+        padding-left: 30px !important;
+    }
+
+    tr[_v1_asset^="Attachment"] td.gg:first-child a {
+        position: relative;
+    }
+
+    tr[_v1_asset^="Attachment"] td.gg:first-child a:before {
+        background-image: url("https://www12.v1host.com/s/14.0.2.6652/css/images/hovers/hover-icons-16x20px.png");
+        background-position: -20px 0;
+        background-repeat: no-repeat;
+        content: "";
+        display: block;
+        height: 16px;
+        left: 4px;
+        position: absolute;
+        top: 0;
+        width: 16px;
+    }
+
 
 
     
