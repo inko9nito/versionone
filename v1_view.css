@@ -56,6 +56,11 @@
         .asset-heading .tabbar .tab-buttons .tab-button {
             background: none !important;
         }
+        
+        .asset-heading .tabbar .tab-buttons .tab-button:hover a,
+        .asset-heading .tabbar .tab-buttons .tab-button:hover a span {
+            color: rgba(255, 255, 255, 0.60) !important;
+        }
     
     .asset-summary .asset-heading ul {
         margin-bottom: 0 !important;
@@ -79,7 +84,7 @@
             background-color: #FFFFFF !important;
             color: #262626 !important;
         }
-    
+
 
     /********** Relation Links **********/
     
@@ -107,6 +112,59 @@
             .relation-links li a:hover {
                 color: #009FF2 !important;
             }
+
+        
+    /* Icons for links */
+    
+    .relation-links li a[href="#Attachments"],
+    .relation-links li a[href="#BlockingIssues"],
+    .relation-links li a[href="#ChangeSets"],
+    .relation-links li a[href="#Links"],
+    .relation-links li a[href="#Tasks"] {
+        padding-left: 20px;
+        position: relative;
+    }
+    
+    .relation-links li a[href="#Attachments"]:before,
+    .relation-links li a[href="#BlockingIssues"]:before,
+    .relation-links li a[href="#ChangeSets"]:before,
+    .relation-links li a[href="#Links"]:before,
+    .relation-links li a[href="#Tasks"]:before {
+        background-image: url("https://www12.v1host.com/s/14.0.2.6652/css/images/hovers/hover-icons-16x20px.png");
+        background-repeat: no-repeat;
+        content: " ";
+        display: block;
+        height: 16px;
+        left: -2px;
+        position: absolute;
+        top: 0;
+        width: 16px;
+    }
+    
+    .relation-links li a[href="#Attachments"]:before {
+        background-position: -20px 0;
+    }
+    
+    .relation-links li a[href="#BlockingIssues"]:before {
+        background-position: -62px -48px;
+    }
+    
+    .relation-links li a[href="#ChangeSets"]:before {
+        background-image: url("https://www12.v1host.com/s/14.0.2.6652/css/images/icons/ChangeSet-Icon.gif");
+        background-position: 0;
+    }
+    
+    .relation-links li a[href="#Links"]:before {
+        background-position: -20px -16px;
+    }
+    
+    .relation-links li a[href="#Tasks"]:before {
+        background-image: url("https://www12.v1host.com/s/14.0.2.6652/css/images/icons/Task-Icon.gif");
+        background-position: 0;
+    }
+    
+    
+
 
 
     /********** Details boxes **********/
@@ -192,7 +250,50 @@
         .asset-info a[data-assettype="Epic"] {
             background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/icons/Epic-Icon.gif") !important;
         }
-    
+
+
+    /****** Icons in Links section ******/
+
+    tr[_v1_asset^="Link"] td.gg:first-child a {
+        padding-left: 20px;
+    }
+
+    td.gg:first-child a.link {
+        position: relative;
+    }
+
+    td.gg:first-child a.link:before {
+        background-repeat: no-repeat;
+        content: "";
+        display: block;
+        height: 16px;
+        left: -4px;
+        position: absolute;
+        top: 0;
+        width: 16px;
+    }
+
+    .indented.no-expander {
+        display: none !important;
+    }
+
+    /* ZenDesk */
+    td.gg:first-child a[href^="https://alkami.zendesk.com"].link:before {
+        background-image: url("http://www.zendesk.com/favicon.ico");
+    }
+
+    /* InVision */
+    td.gg:first-child a[href^="https://projects.invisionapp.com"].link:before,
+    td.gg:first-child a[href^="http://invis.io"].link:before {
+        background-image: url("http://www.invisionapp.com/favicon.ico");
+    }
+
+    /* Google Drive */
+    td.gg:first-child a[href^="https://docs.google.com"].link:before {
+        background-image: url("http://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_4.ico");
+    }
+
+
     
     /********** Don't remember what this does **********/
     .asset-summary .scroll-view {
