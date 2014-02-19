@@ -38,8 +38,9 @@ Copy and paste the contents of all three stylesheets using the Stylish plugin.
 - Icons in the details boxes
 - User avatars
 - Ephasized Status
+- Icons next to relation links (Tasks, Blockers, etc)
 
-![Story modal screenshot](http://content.screencast.com/users/inko9nito/folders/Jing/media/e1dff13b-b510-4798-a56f-00aa739e6a03/00006593.png)
+![Story modal screenshot](http://content.screencast.com/users/inko9nito/folders/Jing/media/8168b95b-64cc-44b9-992c-935cb2e5edcf/00006682.png)
 
 
 ***
