@@ -60,6 +60,7 @@ Copy and paste the contents of all three stylesheets using the Stylish plugin.
  - InVision
  - Google Drive
  - ZenDesk
+- Generic link icon shows up next to all other links not mentioned above
 
 ![Links screenshot](http://content.screencast.com/users/inko9nito/folders/Jing/media/f4104d1f-27b8-435d-b049-369e20ab92bf/00006665.png)
 
