@@ -144,8 +144,12 @@
         a.asset-parent-link[data-assettype="Story"], 
         .inline-asset-detail .asset-link a.open-by-name[data-assettype="Story"],
         .DetailContent a.open-by-name[data-assettype="Story"] {
-            background: #E5F0D7 !important;
-            border: 2px solid rgba(127, 178, 53, 1) !important;
+            background: #7BA330 !important;
+            border: 0 none !important;
+            border-radius: 2px;
+            color: #FFFFFF !important;
+            display: inline-block !important;
+            padding: 2px 4px;
         }
     
     .board .story-card.defect {
@@ -163,13 +167,17 @@
             background-color: rgba(159, 32, 31, 0.15) !important;
             color: rgba(159, 32, 31, 0.80);
         }
-        
+
         .asset-info a.open-by-name[data-assettype="Defect"],
         a.asset-parent-link[data-assettype="Defect"], 
         .inline-asset-detail .asset-link a.open-by-name[data-assettype="Defect"],
         .DetailContent a.open-by-name[data-assettype="Defect"] {
-            background: #F4E5E5 !important;
-            border: 2px solid rgba(159, 32, 31, 0.60) !important;
+            background: #9F201F !important;
+            border: 0 none !important;
+            border-radius: 2px;
+            color: #FFFFFF !important;
+            display: inline-block !important;
+            padding: 2px 4px;
         }
     
     
@@ -290,13 +298,26 @@
 
         
     
-    
     /* Conversation / Comment styling */
+
     .asset-summary .conversations .conversations-stream > li.topic .details .content {
         line-height: 150% !important;
         margin: 15px 0 10px 30px !important;
     }
+
+    .asset-summary .conversations .conversations-stream > li.conversation .details .content,
+    .asset-summary .conversations .conversations-stream > li.conversation .reply .details .content {
+        font-size: 12px !important;
+        line-height: 150% !important;
+    }
+
+    .asset-summary .conversations .conversations-stream > li.conversation .reply .details .content {
+        margin: 15px 10px 10px 30px !important;
+    }
     
+    .asset-summary .conversations .conversations-stream > li.conversation .reply .details .mentions {
+        margin-left: 30px !important;
+    }
     
     /* Tasks */
 
@@ -469,7 +490,8 @@
     a.open-by-name.asset-changedby-link[data-assettype="Member"],
     .member-menu.open a.open-by-name[rel="member-details"],
     .topic .new-reply .header .name a.open-by-name[data-assettype="Member"] {
-        padding: 5px 0 5px 27px !important;
+        margin: 3px 0;
+        padding: 2px 0 2px 27px !important;
         position: relative;
     }
     
@@ -494,16 +516,18 @@
         width: 20px !important;
     }
     
-    /* don't display avatars on conversation mentions */
+    /* don't display avatars on conversation mentions or recent changes */
     .header .name a.open-by-name[data-assettype="Member"],
     .mentions a.open-by-name[data-assettype="Member"],
-    .ui-tooltip a.open-by-name[data-assettype="Member"]{
+    .ui-tooltip a.open-by-name[data-assettype="Member"],
+    .recent-item-content a.open-by-name[data-assettype="Member"] {
         padding-left: 0 !important;
     }
     
     .header .name a.open-by-name[data-assettype="Member"]:before,
     .mentions a.open-by-name[data-assettype="Member"]:before,
-    .ui-tooltip a.open-by-name[data-assettype="Member"]:before {
+    .ui-tooltip a.open-by-name[data-assettype="Member"]:before,
+    .recent-item-content a.open-by-name[data-assettype="Member"]:before  {
         display: none;
     }
     
@@ -532,14 +556,12 @@
         margin-right: 10px !important;
     }
     
-    
-        /* Vera */
-        a[rel="Member:2747"]:before,
-        a[rel^="Member:2747"]:before,
-        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A2747"]:before,
-        a.asset-changedby-link[rel="Member:2747"]:before {
-            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A3203") !important;
-        }
+
+    /* Round icons in Recent Changes sidebar */
+    .recent-item-content .who img.avatar {
+        border-radius: 2px;
+    }
+
         
         /* Aaron */
         a[rel="Member:2749"]:before,
@@ -552,7 +574,7 @@
         a[rel="Member:2751"]:before,
         a[rel^="Member:2751"]:before,
         a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A2751"]:before {
-            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A7137") !important;
+            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A49611") !important;
         }
         
                 
@@ -568,7 +590,7 @@
         a[rel="Member:23491"]:before,
         a[rel^="Member:23491"]:before,
         a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A23491"]:before {
-            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A23541") !important;
+            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A48239") !important;
         }
       
         
@@ -587,19 +609,34 @@
             background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A2754") !important;
         }
         
+        /* Dang Dang */
+        a[rel="Member:36402"]:before,
+        a[rel^="Member:36402"]:before,
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A36402"]:before {
+            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A48282") !important;
+        }
+        
         /* Daron */
         a[rel="Member:2739"]:before,
         a[rel^="Member:2739"]:before,
         a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A2739"]:before {
-            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A3320") !important;
+            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A48242") !important;
         }
     
-        /* Dave */
+        /* Dave Cain */
         a[rel="Member:2736"]:before,
         a[rel^="Member:2736"]:before,
         a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A2736"]:before {
-            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A3233") !important;
+            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A34045") !important;
         }
+        
+        /* Dave Harter */
+        a[rel="Member:10154"]:before,
+        a[rel^="Member:10154"]:before,
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A10154"]:before {
+            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A48238") !important;
+        }
+        
         
         /* David Stitzlein */
         a[rel="Member:2738"]:before,
@@ -608,6 +645,13 @@
             background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A3213") !important;
         }
         
+        /* Eric Bramble */
+        a[rel="Member:41790"]:before,
+        a[rel^="Member:41790"]:before,
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A41790"]:before {
+            background-image: url("https://www.alkamitech.com/wp-content/uploads/2011/09/eric-180x180.jpg") !important;
+        }
+
         /* Eric Montalvo */
         a[rel="Member:7770"]:before,
         a[rel^="Member:7770"]:before,
@@ -630,6 +674,13 @@
             background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A6764") !important;
         }
         
+        /* Ian Henehen */
+        a[rel="Member:13139"]:before,
+        a[rel^="Member:13139"]:before,
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A13139"]:before {
+            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A48283") !important;
+        }
+
         
         /* Jason Chilcoat */
         a[rel="Member:3228"]:before,
@@ -678,7 +729,7 @@
         a[rel="Member:39613"]:before,
         a[rel^="Member:39613"]:before,
         a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A39613"]:before {
-            background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/no_avatar.png") !important;
+            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A48284") !important;
         }
         
         /* Kelly */
@@ -736,6 +787,13 @@
         a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A7771"]:before {
             background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A7819") !important;
         }
+
+        /* Sean Weadock */
+        a[rel="Member:15785"]:before,
+        a[rel^="Member:15785"]:before,
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A15785"]:before {
+            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A46314") !important;
+        }
         
         /* Steve Hightower */
         a[rel="Member:2745"]:before,
@@ -748,8 +806,18 @@
         a[rel="Member:2746"]:before,
         a[rel^="Member:2746"]:before,
         a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A2746"]:before {
-            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A3465") !important;
+            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A48233") !important;
         }
+        
+            
+        /* Vera */
+        a[rel="Member:2747"]:before,
+        a[rel^="Member:2747"]:before,
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A2747"]:before,
+        a.asset-changedby-link[rel="Member:2747"]:before {
+            background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A3203") !important;
+        }
+        
         
         /* Yang */
         a[rel="Member:2748"]:before,
