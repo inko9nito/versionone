@@ -659,13 +659,12 @@
             background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/no_avatar.png") !important;
         }
         
-        /* Gyorgy Goericke */
+        /* Gyorgy Bozoki */
         a[rel="Member:42571"]:before,
         a[rel^="Member:42571"]:before,
         a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A42571"]:before {
             background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/no_avatar.png") !important;
         }
-        
         
         /* Hiroshi Miyazawa */
         a[rel="Member:6761"]:before,
@@ -738,6 +737,13 @@
         a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A2743"]:before {
             background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A3323") !important;
         }
+
+        /* Ken Byrd */
+        a[rel="Member:13323"]:before,
+        a[rel^="Member:13323"]:before,
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A13323"]:before {
+            background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/no_avatar.png") !important;
+        }
         
         /* Kevin Asbury */
         a[rel="Member:2742"]:before,
@@ -800,6 +806,13 @@
         a[rel^="Member:2745"]:before,
         a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A2745"]:before {
             background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A4264") !important;
+        }
+
+        /* Tim Burga */
+        a[rel="Member:13324"]:before,
+        a[rel^="Member:13324"]:before,
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A13324"]:before {
+            background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/no_avatar.png") !important;
         }
         
         /* Tim Nestler */
