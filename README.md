@@ -10,7 +10,7 @@ Copy and paste the contents of all three stylesheets using the Stylish plugin.
 
 - <a href="http://userstyles.org/help/stylish_firefox" target="_blank">Instructions for Firefox</a>
 - <a href="http://userstyles.org/help/stylish_chrome" target="_blank">Instructions for Chrome</a>
-  - <a href="http://screencast.com/t/1SnxsZujqRX" target="_blank">Watch a screencast</a>
+  - <a href="http://screencast.com/t/1SnxsZujqRX" target="_blank">Watch a short screencast walkthrough (01:34)</a>
 
 # Screenshots
 
@@ -37,7 +37,7 @@ Copy and paste the contents of all three stylesheets using the Stylish plugin.
 - Conversations sidebar moved to the right
 - Icons in the details boxes
 - User avatars
-- Ephasized Status
+- Emphasized Status
 - Icons next to relation links (Tasks, Blockers, etc)
 
 ![Story modal screenshot](http://content.screencast.com/users/inko9nito/folders/Jing/media/8168b95b-64cc-44b9-992c-935cb2e5edcf/00006682.png)
