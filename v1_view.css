@@ -225,29 +225,37 @@
     }
     
   
-    /* Icons in Details boxes */
+    /* Icons in Details boxes and in changes under History tab (starting with .item) */
     
     .asset-info a[data-assettype="Timebox"],
     .asset-info a[data-assettype="Scope"],
     .asset-info a[data-assettype="Theme"],
-    .asset-info a[data-assettype="Epic"]{
+    .asset-info a[data-assettype="Epic"],
+    .item a[data-assettype="Timebox"],
+    .item a[data-assettype="Scope"],
+    .item a[data-assettype="Theme"],
+    .item a[data-assettype="Epic"] {
         background-position: 0 2px !important;
         background-repeat: no-repeat !important;
         padding: 5px 0 5px 30px !important;
     }
-        .asset-info a[data-assettype="Timebox"] {
+        .asset-info a[data-assettype="Timebox"],
+        .item a[data-assettype="Timebox"] {
             background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/icons/Iteration-Icon.gif") !important;
         }
         
-        .asset-info a[data-assettype="Scope"] {
+        .asset-info a[data-assettype="Scope"],
+        .item a[data-assettype="Scope"] {
             background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/icons/Project-Icon.gif") !important;
         }
         
-        .asset-info a[data-assettype="Theme"] {
+        .asset-info a[data-assettype="Theme"],
+        .item a[data-assettype="Theme"] {
             background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/icons/Theme-Icon.gif") !important;
         }
         
-        .asset-info a[data-assettype="Epic"] {
+        .asset-info a[data-assettype="Epic"],
+        .item a[data-assettype="Epic"] {
             background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/icons/Epic-Icon.gif") !important;
         }
 
@@ -296,6 +304,13 @@
     /* Google Drive */
     td.gg:first-child a[href^="https://docs.google.com"].link:before {
         background-image: url("http://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_4.ico");
+        background-position: 0;
+    }
+
+    /* GitHub */
+    td.gg:first-child a[href^="https://git.corp.alkamitech.com/"].link:before,
+    td.gg:first-child a[href^="https://github.com/"].link:before {
+        background-image: url("https://github.com/favicon.ico");
         background-position: 0;
     }
 
@@ -381,10 +396,18 @@
         .side-panel.opened .tab-content-container {
             left: auto !important;
             right: 42px !important;
-        }
-        
-    /* TODO: Move side panel below the title */
-    /* TODO: remove commas between owners */    
-    
+        } 
+
+    /********** History / Changes **********/
+
+    .DetailContent tr.item > td {
+    	border-bottom: 1px solid #E6E6E6 !important;
+    	padding: 10px 0 !important;
+    	vertical-align: top !important;
+    }
+
+    .AttributeLabel {
+    	font-weight: bold;
+    }    
 
 }

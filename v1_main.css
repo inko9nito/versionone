@@ -600,6 +600,13 @@
         a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A20"]:before {
             background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A1887") !important;
         }
+
+        /* Chad Rader */
+        a[rel="Member:48221"]:before,
+        a[rel^="Member:48221"]:before,
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A48221"]:before {
+            background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/no_avatar.png") !important;
+        }
         
         
         /* Cole */
@@ -614,6 +621,13 @@
         a[rel^="Member:36402"]:before,
         a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A36402"]:before {
             background-image: url("https://www12.v1host.com/AlkamiTechnology/Image.mvc/Show?imageOid=Image%3A48282") !important;
+        }
+
+        /* Danny Nguyen */
+        a[rel="Member:52231"]:before,
+        a[rel^="Member:52231"]:before,
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A52231"]:before {
+            background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/no_avatar.png") !important;
         }
         
         /* Daron */
@@ -758,6 +772,13 @@
         a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A5348"]:before {
             background-image: url("https://s3.amazonaws.com/uploads.hipchat.com/photos/356880/47q54wfz65iiip5_125.png") !important;
         }
+
+        /* Kevin Wilson */
+        a[rel="Member:4025"]:before,
+        a[rel^="Member:4025"]:before,
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A4025"]:before {
+            background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/no_avatar.png") !important;
+        }
         
         /* Marina Casarez */
         a[rel="Member:10869"]:before,
@@ -812,6 +833,13 @@
         a[rel="Member:13324"]:before,
         a[rel^="Member:13324"]:before,
         a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A13324"]:before {
+            background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/no_avatar.png") !important;
+        }
+
+        /* Tim Couch */
+        a[rel="Member:50532"]:before,
+        a[rel^="Member:50532"]:before,
+        a[href="/AlkamiTechnology/Member.mvc/Summary?oidToken=Member%3A50532"]:before {
             background-image: url("https://www12.v1host.com/s/13.1.1.4685/css/images/no_avatar.png") !important;
         }
         
