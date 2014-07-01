@@ -6,7 +6,7 @@ This is a stylesheet for VersionOne, modifying the Team Room view. The rest of V
 
 # Instructions
 
-Copy and paste the contents of all three stylesheets using the Stylish plugin.
+Copy and paste the contents of all four stylesheets using the Stylish plugin.
 
 - <a href="http://userstyles.org/help/stylish_firefox" target="_blank">Instructions for Firefox</a>
 - <a href="http://userstyles.org/help/stylish_chrome" target="_blank">Instructions for Chrome</a>
