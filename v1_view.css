@@ -8,7 +8,7 @@
     /* Layout */
     .inline-asset-detail {
         min-width: 780px !important;
-        max-width: 70% !important;
+        max-width: 80% !important;
     }
     
     .main-panel-scroller {
@@ -120,7 +120,8 @@
     .relation-links li a[href="#BlockingIssues"],
     .relation-links li a[href="#ChangeSets"],
     .relation-links li a[href="#Links"],
-    .relation-links li a[href="#Tasks"] {
+    .relation-links li a[href="#Tasks"],
+    .relation-links li a[href="#Tests"] {
         padding-left: 20px;
         position: relative;
     }
@@ -129,7 +130,8 @@
     .relation-links li a[href="#BlockingIssues"]:before,
     .relation-links li a[href="#ChangeSets"]:before,
     .relation-links li a[href="#Links"]:before,
-    .relation-links li a[href="#Tasks"]:before {
+    .relation-links li a[href="#Tasks"]:before,
+    .relation-links li a[href="#Tests"]:before {
         background-image: url("https://www12.v1host.com/s/14.0.2.6652/css/images/hovers/hover-icons-16x20px.png");
         background-repeat: no-repeat;
         content: " ";
@@ -146,7 +148,8 @@
     }
     
     .relation-links li a[href="#BlockingIssues"]:before {
-        background-position: -62px -48px;
+        background-image: url("https://www12.v1host.com/s/14.0.7.6706/css/images/icons/Issue-Icon.gif");
+        background-position: 0;
     }
     
     .relation-links li a[href="#ChangeSets"]:before {
@@ -160,6 +163,11 @@
     
     .relation-links li a[href="#Tasks"]:before {
         background-image: url("https://www12.v1host.com/s/14.0.2.6652/css/images/icons/Task-Icon.gif");
+        background-position: 0;
+    }
+
+    .relation-links li a[href="#Tests"]:before {
+        background-image: url("https://www12.v1host.com/s/14.0.7.6706/css/images/icons/Test-Icon.gif");
         background-position: 0;
     }
     
@@ -275,6 +283,7 @@
         background-image: url("https://www12.v1host.com/s/14.0.2.6652/css/images/hovers/hover-icons-16x20px.png");
         background-position: -20px -16px;
         background-repeat: no-repeat;
+        background-size: 16px;
         content: "";
         display: block;
         height: 16px;
@@ -398,7 +407,7 @@
             right: 42px !important;
         } 
 
-    /********** History / Changes **********/
+    /********** History Details **********/
 
     .DetailContent tr.item > td {
     	border-bottom: 1px solid #E6E6E6 !important;
@@ -408,6 +417,30 @@
 
     .AttributeLabel {
     	font-weight: bold;
-    }    
+    }
+
+    
+
+    /********** Tasks **********/
+
+    /* Fix when there is more than one user assigned to a task:
+    	- list users one per line
+    	- remove commas between users
+    	- remove extra vertical space between users
+   	*/
+
+    .gridtable .owners {
+        font-size: 0;
+    }
+
+    .gridtable .owners a {
+        display: block;
+        font-size: 11px;
+        margin-top: -10px !important;
+    }
+
+    .gridtable .owners a:first-child {
+        margin-top: 0 !important;
+    }
 
 }
